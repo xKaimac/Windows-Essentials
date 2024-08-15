@@ -16,3 +16,12 @@ Set-PSReadLineKeyHandler -Chord Ctrl+f -ScriptBlock {
     [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
     fzf-cd
 }
+
+function prompt {
+    $branch = git rev-parse --abbrev-ref HEAD 2>$null
+    if ($branch) {
+        "PS $($executionContext.SessionState.Path.CurrentLocation) Git: [$branch]> "
+    } else {
+        "PS $($executionContext.SessionState.Path.CurrentLocation)> "
+    }
+}
