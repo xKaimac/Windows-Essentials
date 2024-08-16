@@ -20,7 +20,7 @@ Set-PSReadLineKeyHandler -Chord Ctrl+f -ScriptBlock {
 function prompt {
     $branch = git rev-parse --abbrev-ref HEAD 2>$null
     if ($branch) {
-        "PS $($executionContext.SessionState.Path.CurrentLocation) Git: [$branch]> "
+        "PS $($executionContext.SessionState.Path.CurrentLocation) [$branch]> "
     } else {
         "PS $($executionContext.SessionState.Path.CurrentLocation)> "
     }
