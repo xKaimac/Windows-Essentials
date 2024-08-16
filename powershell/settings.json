@@ -43,7 +43,11 @@
         "defaults": 
         {
             "backgroundImage": "C:\\Users\\Alistair.Macvic\\Downloads\\wp6764580.jpg",
-            "backgroundImageOpacity": 0.45
+            "backgroundImageOpacity": 0.45,
+            "font": 
+            {
+                "face": "Monaspace Argon"
+            }
         },
         "list": 
         [
