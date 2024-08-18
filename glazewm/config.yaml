@@ -4,10 +4,6 @@ general:
   startup_commands:
     [
       "shell-exec %userprofile%/.glzr/zebar/start.bat",
-      "shell-exec /c start firefox",
-      "shell-exec /c start teams",
-      "shell-exec powershell -Command Start-Process wt -Verb RunAs",
-      "shell-exec powershell -Command Start-Process wt -Verb RunAs",
     ]
 
   # Whether to automatically focus windows underneath the cursor.
