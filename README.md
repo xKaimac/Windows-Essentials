@@ -1,4 +1,4 @@
-# Windows-Essentials
+# Snotfiles
 When forced to use Windows, make life a little nicer.
 
 ## Docs quick access
